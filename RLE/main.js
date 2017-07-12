@@ -22,6 +22,14 @@ function compressionRLESimple(donneesACompresser) {
 }
 
 function decompressionRLESimple(donneesCompressees) {
+  var numbers = donneesCompressees.match(/(\d+)/gi);
+  var letters = donneesCompressees.match(/(\D+)/gi);
+  var arrAnswer = [];
+  for (var i = 0; i < letters.length; i++) {
+    var nbLttr = letters[i].repeat(numbers[i]);
+    arrAnswer.push(nbLttr);
+  }
+  return arrAnswer.join("");
 }
 
 function compressionRLEAvance(donnees, seuil, delimiteur) {
