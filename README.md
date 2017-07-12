@@ -1,4 +1,4 @@
-# RLE data compression
+# RLE data compression algorithm
 
 Masterclass with Jérôme Charron at Wild Code School.
 
