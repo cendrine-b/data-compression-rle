@@ -1,13 +1,39 @@
-table {
-  width: 100%;
+.main {
+  height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
-table, tr, td {
-  border: 1px #aaaaaa solid;
-  border-spacing: 0px;
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
-#tocompress-data,
-#compressed-data,
-#uncompressed-data
-{
-  word-break:break-all;
+
+.table thead tr {
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  color: white;
+  background-color: #36D7B7;
+}
+
+.table tbody th, .table tbody td {
+  vertical-align: middle;
+}
+
+.table thead th, .table tbody th, .table tbody td {
+  border-color: #36D7B7;
+}
+
+.table tbody td:first-of-type {
+  text-align: center;
+}
+
+#tocompress-data, #compressed-data, #uncompressed-data {
+  word-break: break-all;
 }
