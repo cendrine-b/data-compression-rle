@@ -2,44 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RLE Data Compression</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>RLE Data Compression</h1>
-    <table>
-      <tr>
-        <td>Description</td>
-        <td>Taille</td>
-        <td>Valeur</td>
-      </tr>
-      <tr>
-        <td>Données à compresser</td>
-        <td id="tocompress-size"></td>
-        <td id="tocompress-data"></td>
-      </tr>
-      <tr>
-        <td>Données compressées</td>
-        <td id="compressed-size"></td>
-        <td id="compressed-data"></td>
-      </tr>
-      <tr>
-        <td>Facteur de compression</td>
-        <td id="compression-gain"></td>
-        <td id="compression-ratio"></td>
-      </tr>
-      <tr>
-        <td>Données dé-compressées</td>
-        <td id="uncompressed-size"></td>
-        <td id="uncompressed-data"></td>
-      </tr>
-      <tr>
-        <td>Compression/Décompression OK ?</td>
-        <td colspan="2" id="process-status"></td>
-      </tr>
-    </table>
+    <div class="container">
+      <h1>RLE Data Compression</h1>
+      <table class="table table-hover table-responsive">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Taille</th>
+            <th>Valeur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Données à compresser</th>
+            <td id="tocompress-size"></td>
+            <td id="tocompress-data"></td>
+          </tr>
+          <tr>
+            <th>Données compressées</th>
+            <td id="compressed-size"></td>
+            <td id="compressed-data"></td>
+          </tr>
+          <tr>
+            <th>Facteur de compression</th>
+            <td id="compression-gain"></td>
+            <td id="compression-ratio"></td>
+          </tr>
+          <tr>
+            <th>Données dé-compressées</th>
+            <td id="uncompressed-size"></td>
+            <td id="uncompressed-data"></td>
+          </tr>
+          <tr>
+            <th>Compression/Décompression OK ?</th>
+            <td colspan="2" id="process-status"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="jquery-1.7.1.min.js"><\/script>')</script>
